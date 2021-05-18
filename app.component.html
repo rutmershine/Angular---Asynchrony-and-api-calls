@@ -1,0 +1,6 @@
+<div>
+    <button (click)="isWorkers=true">SHOW WORKERS</button>
+    <button (click)="isWorkers=false">SHOW JOBS</button>
+    <app-show-workers-list *ngIf="isWorkers"></app-show-workers-list>
+    <app-jobs *ngIf="!isWorkers"></app-jobs>
+</div>

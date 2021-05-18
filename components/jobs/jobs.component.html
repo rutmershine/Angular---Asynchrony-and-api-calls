@@ -1,0 +1,4 @@
+<h1>Jobs: </h1>
+<ul>
+    <li *ngFor="let job of jobs">id: {{job.id}} | description: {{job.desc}} | salaries average: {{calcAvg(job.desc)}}</li>
+</ul>
